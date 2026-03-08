@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>俄乌前线态势图 - 2026年3月</title>
+
+  <!-- CesiumJS -->
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.95/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.95/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Cesium 3D地球容器 -->
+  <div id="cesiumContainer"></div>
+
+  <!-- 顶部标题栏 -->
+  <div id="titleBar">
+    <h1>🗺 俄乌前线<span class="accent">态势图</span></h1>
+    <span class="date-badge">📅 2026年3月6日</span>
+    <span class="source-badge">数据来源: ISW (Institute for the Study of War)</span>
+  </div>
+
+  <!-- 左侧图例 -->
+  <div id="legend"></div>
+
+  <!-- 右侧信息面板 -->
+  <div id="infoPanel">
+    <div id="infoPanelHeader">
+      <span id="infoPanelTitle">详情</span>
+      <button id="infoPanelClose" onclick="hideInfoPanel()">✕</button>
+    </div>
+    <div id="infoPanelContent"></div>
+  </div>
+
+  <!-- 底部状态栏 -->
+  <div id="statusBar">
+    <div class="status-item">
+      <span class="status-dot"></span>
+      <span>实时态势</span>
+    </div>
+    <div class="status-item">前线长度: ~600km</div>
+    <div class="status-item">主要作战方向: 10个</div>
+    <div class="status-item">数据更新: 2026-03-06 (ISW评估)</div>
+  </div>
+
+  <!-- 快捷操作按钮 -->
+  <div id="quickActions">
+    <button class="quick-btn" onclick="flyToRegion('kharkiv')">哈尔科夫</button>
+    <button class="quick-btn" onclick="flyToRegion('lyman')">利曼</button>
+    <button class="quick-btn" onclick="flyToRegion('pokrovsk')">波克罗夫斯克</button>
+    <button class="quick-btn" onclick="flyToRegion('hulyaipole')">胡利亚伊波列</button>
+    <button class="quick-btn" onclick="flyToRegion('zaporizhzhia')">扎波罗热</button>
+    <button class="quick-btn" onclick="flyToRegion('overview')">全局视图</button>
+  </div>
+
+  <!-- JS模块 -->
+  <script src="js/frontline.js"></script>
+  <script src="js/markers.js"></script>
+  <script src="js/legend.js"></script>
+  <script>
+    // 快捷导航功能
+    var regionViews = {
+      kharkiv: { lon: 36.60, lat: 50.15, alt: 200000 },
+      lyman: { lon: 37.80, lat: 48.98, alt: 150000 },
+      pokrovsk: { lon: 37.18, lat: 48.28, alt: 150000 },
+      hulyaipole: { lon: 36.00, lat: 47.38, alt: 200000 },
+      zaporizhzhia: { lon: 35.30, lat: 47.20, alt: 250000 },
+      overview: { lon: 36.5, lat: 48.0, alt: 1200000 }
+    };
+
+    function flyToRegion(name) {
+      var r = regionViews[name];
+      if (!r || !window.cesiumViewer) return;
+      window.cesiumViewer.camera.flyTo({
+        destination: Cesium.Cartesian3.fromDegrees(r.lon, r.lat, r.alt),
+        orientation: {
+          heading: Cesium.Math.toRadians(0),
+          pitch: Cesium.Math.toRadians(-55),
+          roll: 0
+        },
+        duration: 1.5
+      });
+    }
+  </script>
+  <script src="js/app.js"></script>
+</body>
+</html>

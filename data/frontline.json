@@ -1,0 +1,266 @@
+{
+  "frontline": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "主前线 (FEBA)",
+          "description": "2026年3月前线对峙线（近似）"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [36.35, 50.38],
+            [36.40, 50.30],
+            [36.60, 50.15],
+            [36.75, 50.05],
+            [36.90, 49.95],
+            [36.95, 49.85],
+            [37.05, 49.75],
+            [37.10, 49.60],
+            [37.20, 49.50],
+            [37.30, 49.40],
+            [37.40, 49.30],
+            [37.55, 49.20],
+            [37.60, 49.10],
+            [37.55, 49.00],
+            [37.50, 48.90],
+            [37.40, 48.80],
+            [37.30, 48.70],
+            [37.20, 48.60],
+            [37.10, 48.50],
+            [37.00, 48.40],
+            [36.85, 48.30],
+            [36.70, 48.20],
+            [36.50, 48.10],
+            [36.30, 48.00],
+            [36.10, 47.90],
+            [35.90, 47.80],
+            [35.70, 47.70],
+            [35.50, 47.60],
+            [35.30, 47.50],
+            [35.15, 47.40],
+            [35.00, 47.30],
+            [34.80, 47.20],
+            [34.60, 47.10],
+            [34.30, 47.00],
+            [34.00, 46.90],
+            [33.70, 46.80],
+            [33.40, 46.70],
+            [33.10, 46.65],
+            [32.90, 46.63],
+            [32.70, 46.62],
+            [32.60, 46.63]
+          ]
+        }
+      }
+    ]
+  },
+  "russianControlZone": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "俄军控制区（东部）",
+          "side": "russia"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [[
+            [40.20, 50.40],
+            [39.80, 50.00],
+            [39.50, 49.50],
+            [39.20, 49.00],
+            [38.80, 48.50],
+            [38.50, 48.00],
+            [38.00, 47.50],
+            [37.50, 47.10],
+            [37.00, 46.80],
+            [36.50, 46.50],
+            [35.80, 46.20],
+            [35.20, 46.00],
+            [34.80, 45.80],
+            [35.00, 45.50],
+            [35.50, 45.30],
+            [36.00, 45.20],
+            [36.80, 45.30],
+            [37.50, 45.50],
+            [38.00, 45.80],
+            [38.50, 46.00],
+            [39.00, 46.50],
+            [39.50, 47.00],
+            [39.80, 47.50],
+            [40.00, 48.00],
+            [40.20, 48.50],
+            [40.30, 49.00],
+            [40.30, 49.50],
+            [40.20, 50.00],
+            [40.20, 50.40]
+          ]]
+        }
+      }
+    ]
+  },
+  "battleDirections": [
+    {
+      "name": "哈尔科夫方向",
+      "nameEn": "Kharkiv Direction",
+      "lat": 50.15,
+      "lon": 36.60,
+      "side": "russia_attack",
+      "description": "俄军在沃尔昌斯克、维尔查等地持续进攻。乌军报告战斗强度有所下降，俄军正为2026年春季攻势重新集结。涉及部队：第128摩步旅、第71近卫摩步师等。",
+      "status": "俄军进攻/乌军防守"
+    },
+    {
+      "name": "库皮扬斯克方向",
+      "nameEn": "Kupyansk Direction",
+      "lat": 49.71,
+      "lon": 37.62,
+      "side": "ukraine_advance",
+      "description": "乌军在库皮扬斯克市中心取得进展（3月5日确认）。俄军在波多利、皮什查内等地发动进攻。俄军增加无人地面车辆和重型轰炸无人机使用。",
+      "status": "乌军局部反攻"
+    },
+    {
+      "name": "利曼-斯洛维扬斯克方向",
+      "nameEn": "Lyman-Slovyansk Direction",
+      "lat": 48.98,
+      "lon": 37.80,
+      "side": "russia_attack",
+      "description": "俄军第144摩步师渗透至斯维亚托希尔斯克。俄军在利曼周围多方向发动猛烈攻击，使用六旋翼重型轰炸无人机。俄军试图用船只渡河。",
+      "status": "俄军大规模进攻"
+    },
+    {
+      "name": "科斯季安丁尼夫卡方向",
+      "nameEn": "Kostiantynivka Direction",
+      "lat": 48.52,
+      "lon": 37.70,
+      "side": "russia_attack",
+      "description": "俄军在科斯季安丁尼夫卡和德鲁日基夫卡多方向进攻，包括奥里霍沃-瓦西利夫卡、普列什奇夫卡等。托列茨克方向持续战斗。",
+      "status": "俄军多方向进攻"
+    },
+    {
+      "name": "波克罗夫斯克方向",
+      "nameEn": "Pokrovsk Direction",
+      "lat": 48.28,
+      "lon": 37.18,
+      "side": "russia_attack",
+      "description": "俄军在罗金斯克（波克罗夫斯克以北）取得进展。多方向进攻包括赫里什涅、别利茨克等。因天气泥泞，俄军只能使用步兵推进。乌军击毁朝鲜供应的M-1978谷山自行火炮。",
+      "status": "俄军取得进展"
+    },
+    {
+      "name": "多布罗皮利亚方向",
+      "nameEn": "Dobropillya Direction",
+      "lat": 48.45,
+      "lon": 37.08,
+      "side": "russia_attack",
+      "description": "俄军在新顿巴斯（多布罗皮利亚以东）持续进攻。涉及第238炮兵旅、第120海军步兵师等。",
+      "status": "俄军持续进攻"
+    },
+    {
+      "name": "奥列克桑德里夫卡方向",
+      "nameEn": "Oleksandrivka Direction",
+      "lat": 47.85,
+      "lon": 36.50,
+      "side": "ukraine_advance",
+      "description": "乌军利用俄军星链中断发动反攻取得进展。俄军东部集团军群被迫投入作战预备队。俄军第5坦克旅、第37摩步旅等在此方向作战。",
+      "status": "乌军反攻取得进展"
+    },
+    {
+      "name": "胡利亚伊波列方向",
+      "nameEn": "Hulyaipole Direction",
+      "lat": 47.38,
+      "lon": 35.90,
+      "side": "contested",
+      "description": "双方均有推进。俄军占领瓦尔瓦里夫卡、普里卢基等定居点。乌军反攻迫使俄军调整部署。多布罗皮利亚（胡利亚伊波列以北）处于争夺状态。俄第127摩步师等部队作战。",
+      "status": "双方激烈争夺"
+    },
+    {
+      "name": "扎波罗热方向",
+      "nameEn": "Zaporizhzhia Direction",
+      "lat": 47.20,
+      "lon": 35.30,
+      "side": "russia_attack",
+      "description": "俄军向奥里希夫方向进攻，包括胡利亚伊皮尔斯克、诺沃雅科夫利夫卡等。俄第247空降团、第104空降师等部队参战。",
+      "status": "俄军进攻"
+    },
+    {
+      "name": "赫尔松方向",
+      "nameEn": "Kherson Direction",
+      "lat": 46.63,
+      "lon": 32.60,
+      "side": "russia_attack",
+      "description": "俄军在安东尼夫斯基桥附近进行有限地面突击。俄第331空降团（第98空降师）在此方向作战。",
+      "status": "俄军有限突击"
+    },
+    {
+      "name": "新帕夫利夫卡方向",
+      "nameEn": "Novopavlivka Direction",
+      "lat": 47.95,
+      "lon": 36.85,
+      "side": "russia_attack",
+      "description": "俄军在新帕夫利夫卡及周边多方向进攻，包括穆拉夫卡、新米科拉耶夫卡等地。",
+      "status": "俄军进攻"
+    }
+  ],
+  "attackArrows": [
+    {
+      "name": "俄军哈尔科夫攻势",
+      "side": "russia",
+      "from": [36.80, 50.30],
+      "to": [36.50, 50.10]
+    },
+    {
+      "name": "俄军利曼攻势",
+      "side": "russia",
+      "from": [38.00, 49.10],
+      "to": [37.60, 48.95]
+    },
+    {
+      "name": "俄军波克罗夫斯克攻势",
+      "side": "russia",
+      "from": [37.50, 48.35],
+      "to": [37.10, 48.28]
+    },
+    {
+      "name": "俄军胡利亚伊波列攻势",
+      "side": "russia",
+      "from": [36.20, 47.50],
+      "to": [35.90, 47.38]
+    },
+    {
+      "name": "乌军库皮扬斯克反攻",
+      "side": "ukraine",
+      "from": [37.40, 49.65],
+      "to": [37.62, 49.71]
+    },
+    {
+      "name": "乌军奥列克桑德里夫卡反攻",
+      "side": "ukraine",
+      "from": [36.30, 47.75],
+      "to": [36.50, 47.85]
+    }
+  ],
+  "keyLocations": [
+    { "name": "哈尔科夫", "nameEn": "Kharkiv", "lat": 49.99, "lon": 36.23, "side": "ukraine", "type": "city" },
+    { "name": "库皮扬斯克", "nameEn": "Kupyansk", "lat": 49.71, "lon": 37.62, "side": "contested", "type": "city" },
+    { "name": "利曼", "nameEn": "Lyman", "lat": 48.98, "lon": 37.80, "side": "contested", "type": "city" },
+    { "name": "斯洛维扬斯克", "nameEn": "Slovyansk", "lat": 48.85, "lon": 37.62, "side": "ukraine", "type": "city" },
+    { "name": "克拉马托尔斯克", "nameEn": "Kramatorsk", "lat": 48.74, "lon": 37.56, "side": "ukraine", "type": "city" },
+    { "name": "科斯季安丁尼夫卡", "nameEn": "Kostiantynivka", "lat": 48.52, "lon": 37.70, "side": "ukraine", "type": "city" },
+    { "name": "波克罗夫斯克", "nameEn": "Pokrovsk", "lat": 48.28, "lon": 37.18, "side": "contested", "type": "city" },
+    { "name": "多布罗皮利亚", "nameEn": "Dobropillya", "lat": 48.45, "lon": 37.08, "side": "ukraine", "type": "city" },
+    { "name": "顿涅茨克", "nameEn": "Donetsk", "lat": 48.00, "lon": 37.80, "side": "russia", "type": "city" },
+    { "name": "马里乌波尔", "nameEn": "Mariupol", "lat": 47.10, "lon": 37.55, "side": "russia", "type": "city" },
+    { "name": "扎波罗热", "nameEn": "Zaporizhzhia", "lat": 47.84, "lon": 35.14, "side": "ukraine", "type": "city" },
+    { "name": "赫尔松", "nameEn": "Kherson", "lat": 46.63, "lon": 32.62, "side": "ukraine", "type": "city" },
+    { "name": "胡利亚伊波列", "nameEn": "Hulyaipole", "lat": 47.38, "lon": 36.26, "side": "contested", "type": "city" },
+    { "name": "奥里希夫", "nameEn": "Orikhiv", "lat": 47.57, "lon": 35.78, "side": "ukraine", "type": "city" },
+    { "name": "卢甘斯克", "nameEn": "Luhansk", "lat": 48.57, "lon": 39.33, "side": "russia", "type": "city" },
+    { "name": "托列茨克", "nameEn": "Toretsk", "lat": 48.39, "lon": 37.84, "side": "contested", "type": "city" },
+    { "name": "沃尔昌斯克", "nameEn": "Vovchansk", "lat": 50.29, "lon": 36.94, "side": "contested", "type": "city" },
+    { "name": "罗金斯克", "nameEn": "Rodynske", "lat": 48.35, "lon": 37.20, "side": "contested", "type": "town" },
+    { "name": "奥列克桑德里夫卡", "nameEn": "Oleksandrivka", "lat": 47.85, "lon": 36.50, "side": "contested", "type": "town" }
+  ]
+}
